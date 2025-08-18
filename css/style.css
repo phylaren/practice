@@ -1,16 +1,11 @@
-table {
-    border-collapse: collapse;
+html {
+  font-size: clamp(1em, 0.75rem + 1.5vw, 2em);
 }
-
-tr, th, td { 
-    border: 1px solid black;
-    text-align: center;
+body {
+  margin: 0 var(--metric-box-spacing);
 }
-
-tbody tr:nth-child(odd){
-    background-color: aliceblue;
-}
-
-thead th[scope="col"], th[scope="row"], th[scope="rowgroup"], colgroup col[span="2"] {
-    background-color: lightgray;
+:is(h1,h2,h3,p,li,article) {
+  max-inline-size: 66ch;
+  margin-block-start: var(--metric-box-spacing);
+  line-height: 1.5;
 }
