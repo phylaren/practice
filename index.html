@@ -4,73 +4,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/style.css">
   <title>Forms</title>
 </head>
 
 <body>
   <form>
-    <h1>Payment form</h1>
-    <p>Required fields are followed by <strong><span aria-label="required">*</span></strong></p>
-    
     <section>
-      <h2>Contact information</h2>
-      <fieldset>
-        <legend>Title</legend>
-        <ul>
-          <li>
-            <label for="title_1">Ace
-              <input type="radio" name="title" value="A" id="title_1">
-            </label>
-          </li>
-          <li>
-            <label for="title_2">King
-              <input type="radio" name="title" value="K" id="title_2">
-            </label>
-          </li>
-          <li>
-            <label for="title_3">Queen
-              <input type="radio" name="title" value="Q" id="title_3">
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-    
-      <p>
-        <label for="name">Name: <strong><span aria-label="required">*</span></strong></label>
-        <input type="text" name="name" id="name" required>
-      </p>
-      <p>
-        <label for="email">Email: <strong><span aria-label="required">*</span></strong></label>
-        <input type="email" name="email" id="email" required>
-      </p>
-      <p>
-        <label for="password">Password: <strong><span aria-label="required">*</span></strong></label>
-        <input type="password" name="password" id="password" required>
-      </p>
-    </section>
-
-    <section>
-      <h2>Payment information</h2>
-      <p>
-        <label for="card_type">Card type:</label>
-        <select name="card_type" id="card_type">
-          <option value="visa">Visa</option>
-          <option value="mastercard">Mastercard</option>
-          <option value="american_express">American Express</option>
-        </select>
-      </p>
-      <p>
-        <label for="card_num">Card number: <strong><span aria-label="required">*</span></strong></label>
-        <input type="tel" name="card_num" id="card_num" required>
-      </p>
-      <p>
-        <label for="exp_date">Expiration date: <strong><span aria-label="required">*</span></strong></label>
-        <input type="text" name="exp_date" id="exp_date" placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" required>
-      </p>
+      <h1>Your message</h2>
+      <textarea id="message"></textarea>
     </section>
     <section>
       <p>
-        <button type="submit">Validate the payment</button>
+        <label for="to">To</label>
+        <input type="text" id="to" name="to" value="Mozilla" disabled>
+      </p>
+      <p>
+        <label for="from">From</label>
+        <input type="text" id="from" name="from">
+      </p>
+      <p>
+        <label for="email">Reply</label>
+        <input type="email" id="email" name="email">
+      </p>
+      <p>
+        <button>Send your message</button>
       </p>
     </section>
   </form>
