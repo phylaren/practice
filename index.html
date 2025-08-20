@@ -10,28 +10,21 @@
 
 <body>
   <form>
-    <section>
-      <h1>Your message</h2>
-      <textarea id="message"></textarea>
-    </section>
-    <section>
-      <p>
-        <label for="to">To</label>
-        <input type="text" id="to" name="to" value="Mozilla" disabled>
-      </p>
-      <p>
-        <label for="from">From</label>
-        <input type="text" id="from" name="from">
-      </p>
-      <p>
-        <label for="email">Reply</label>
-        <input type="email" id="email" name="email">
-      </p>
-      <p>
-        <button>Send your message</button>
-      </p>
-    </section>
-  </form>
+  <fieldset>
+    <legend>Choose your favorite fruit</legend>
+    <ul>
+      <li>
+        <label for="Cherry"><input type="radio" name="fruit_quiz">Cherry</label>
+      </li>
+      <li>
+        <label for="Banana"><input type="radio" name="fruit_quiz">Banana</label>
+      </li>
+      <li>
+        <label for="Strawberry"><input type="radio" id="Strawberry" name="fruit_quiz">Strawberry</label>
+      </li>
+    </ul>
+  </fieldset>
+</form>
 </body>
 
 </html>
